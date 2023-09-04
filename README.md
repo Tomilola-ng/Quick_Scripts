@@ -1,4 +1,4 @@
-# Fast Code Utilities
+# Quick Script
 
 This repository contains two executable scripts that help speed up your coding workflow. These scripts are designed to streamline common tasks while keeping your commands concise.
 
@@ -42,6 +42,3 @@ chmod +x exe gacp
 3. Move the scripts to a directory that's in your PATH. This ensures you can run them from any location in your terminal.
 
 These utilities are designed to make your coding tasks faster and more efficient. Enjoy the benefits of streamlined commands with `exe` and `gacp`!
-```
-
-This README.md provides clear instructions on how to use your scripts and how to install them for convenient use.
