@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Clears Console 
+clear
+
+# List All Files
+ls
+
+# Creates a file
+touch "$1"
+
+# Adds the She Bang to the Top
+echo '#!/bin/bash' > "$1"
+
+# Opens up in VI
+vi "$1"
