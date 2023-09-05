@@ -1,6 +1,6 @@
 # Quick Script
 
-This repository contains two executable scripts that help speed up your coding workflow. These scripts are designed to streamline common tasks while keeping your commands concise.
+This repository contains three executable scripts that help speed up your coding workflow. These scripts are designed to streamline common tasks while keeping your commands concise.
 
 ## `exe`: Make File Executable
 
@@ -32,14 +32,36 @@ To quickly add, commit, and push your changes to a Git repository, use the follo
 
 If you don't provide a commit message, it will use the default message "Push codes by exe :)".
 
+
+
+## `new`: Create and Edit Bash Script
+
+The `new` script is a handy tool for quickly creating and editing a new Bash script. It performs the following actions:
+
+- Clears the console.
+- Lists all files in the current directory.
+- Creates a new file with the specified name.
+- Adds the Bash shebang (`#!/bin/bash`) to the top of the new file.
+- Opens the new file in the Vi text editor for editing.
+
+### Usage
+
+To create and edit a new Bash script using the `new` script, use the following command:
+
+```bash
+./new script_name.sh
+```
+
 ## Installation
 
 1. Clone this repository to your local machine.
 2. Make sure the scripts are executable:
 
 ```bash
-chmod +x exe gacp
+chmod +x exe gacp new
 ```
+
+##
 
 3. Move the scripts to a directory that's in your PATH. This ensures you can run them from any location in your terminal. If you're not sure how to do this, you can refer to the following steps:
 
@@ -49,7 +71,7 @@ chmod +x exe gacp
      ```
    - Choose one of the directories listed in your PATH, and move the scripts there. For example:
      ```bash
-     sudo mv exe gacp /usr/local/bin/
+     sudo mv exe gacp new /usr/local/bin/
      ```
 
-These utilities are designed to make your coding tasks faster and more efficient. Enjoy the benefits of streamlined commands with `exe` and `gacp`!
+These utilities are designed to make your coding tasks faster and more efficient. Enjoy the benefits of streamlined commands with `exe`, `new` and `gacp`!
