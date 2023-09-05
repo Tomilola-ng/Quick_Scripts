@@ -16,6 +16,8 @@ To make a file executable, use the following command:
 
 Replace `file_name` with the actual name of the file you want to make executable.
 
+--------
+
 ## `gacp`: Git Add, Commit, and Push
 
 The `gacp` script combines the commands for adding changes, committing them, and pushing to a Git repository. You can provide an optional commit message as an argument, or it will use a default message. This script can save you time by reducing repetitive typing when pushing your changes.
@@ -39,6 +41,15 @@ If you don't provide a commit message, it will use the default message "Push cod
 chmod +x exe gacp
 ```
 
-3. Move the scripts to a directory that's in your PATH. This ensures you can run them from any location in your terminal.
+3. Move the scripts to a directory that's in your PATH. This ensures you can run them from any location in your terminal. If you're not sure how to do this, you can refer to the following steps:
+
+   - Identify directories in your PATH:
+     ```bash
+     echo $PATH
+     ```
+   - Choose one of the directories listed in your PATH, and move the scripts there. For example:
+     ```bash
+     sudo mv exe gacp /usr/local/bin/
+     ```
 
 These utilities are designed to make your coding tasks faster and more efficient. Enjoy the benefits of streamlined commands with `exe` and `gacp`!
