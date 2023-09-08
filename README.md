@@ -1,44 +1,68 @@
 # Quick Script
 
-This repository contains two executable scripts that help speed up your coding workflow. These scripts are designed to streamline common tasks while keeping your commands concise.
+This repository contains three executable scripts that help speed up your coding workflow. These scripts are designed to streamline common tasks while keeping your commands concise.
 
-## `exe`: Make File Executable
+## Getting Started
 
-The `exe` script allows you to quickly make a file executable by providing its name as an argument. This is especially useful for shell scripts or other executable files. Just place the `exe` script in a directory that's in your PATH, and you can make any file executable with minimal typing.
+To get started with these scripts, follow these detailed steps:
 
-### Usage
+1. **Clone the Repository:**
+   - Open your terminal or command prompt.
+   - Clone this repository to your local machine by running the following command:
+     ```bash
+     git clone https://github.com/Tomilola-ng/Quick_Scripts.git
+     ```
+   This will create a local copy of the repository on your computer.
 
-To make a file executable, use the following command:
+2. **Change to the Repository Directory:**
+   - Navigate to the cloned repository's directory using the `cd` command. This is important to ensure you are in the correct location to work with the scripts:
+     ```bash
+     cd Quick_Scripts
+     ```
 
-```bash
-./exe file_name
-```
+3. **Confirm Files:**
+   - It's essential to verify that you have all the necessary files. There should be five files in total:
+   
+      Three scripts: exe, gacp, and new.
+      One README file: README.md.
+      One License file: LICENSE (optional).
+   
+     ```bash
+     ls
+     ```
+     The files should include `exe`, `gacp`, `new`, `README.md`, and `LICENSE`.
 
-Replace `file_name` with the actual name of the file you want to make executable.
+5. **Make Scripts Executable:**
+   - Ensure that the scripts are executable by running the following command:
+     ```bash
+     chmod +x exe gacp new
+     ```
+     This command grants execute permissions to the scripts, allowing you to run them.
 
-## `gacp`: Git Add, Commit, and Push
+6. **Add Scripts to PATH:**
+   - To use these scripts conveniently from any location in your terminal, you need to add them to a directory that's in your system's PATH. First, identify directories in your PATH using the following command:
+     ```bash
+     echo $PATH
+     ```
+   - Choose one of the directories listed in your PATH, and move the scripts there. For example:
+     ```bash
+     sudo mv exe gacp new /usr/local/bin/
+     ```
+     This ensures that the scripts can be executed from any location in your terminal.
 
-The `gacp` script combines the commands for adding changes, committing them, and pushing to a Git repository. You can provide an optional commit message as an argument, or it will use a default message. This script can save you time by reducing repetitive typing when pushing your changes.
+7. **Start Using the Scripts:**
+   - Now, you can start using the scripts from anywhere in your terminal:
+     - To make a file executable, use the `exe` script:
+       ```bash
+       exe file_name
+       ```
+     - To quickly add, commit, and push your changes to a Git repository, use the `gacp` script:
+       ```bash
+       gacp "Your commit message here"
+       ```
+     - To create and edit a new Bash script, use the `new` script:
+       ```bash
+       new script_name.sh
+       ```
 
-### Usage
-
-To quickly add, commit, and push your changes to a Git repository, use the following command:
-
-```bash
-./gacp "Your commit message here"
-```
-
-If you don't provide a commit message, it will use the default message "Push codes by exe :)".
-
-## Installation
-
-1. Clone this repository to your local machine.
-2. Make sure the scripts are executable:
-
-```bash
-chmod +x exe gacp
-```
-
-3. Move the scripts to a directory that's in your PATH. This ensures you can run them from any location in your terminal.
-
-These utilities are designed to make your coding tasks faster and more efficient. Enjoy the benefits of streamlined commands with `exe` and `gacp`!
+These utilities are designed to make your coding tasks faster and more efficient. Enjoy the benefits of streamlined commands with `exe`, `new`, and `gacp`!
