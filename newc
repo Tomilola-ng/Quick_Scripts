@@ -1,0 +1,49 @@
+#!/bin/bash
+
+clear
+
+if [ $# -eq 0 ]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+
+filename="$1"
+
+# Check if the file already exists
+if [ -e "$filename.c" ]; then
+  echo "File '$filename.c' already exists."
+  exit 1
+fi
+
+# If the provided filename doesn't end with '.c', add it
+if [[ "$filename" != *.c ]]; then
+  filename="$filename.c"
+fi
+
+# Create the C template code
+cat <<EOF > "$filename"
+#include <stdio.h>
+
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+
+	return (0);
+}
+
+EOF
+
+echo "___________________________ Opening in vi ___________________________"
+
+# Open the file in vi
+vi "$filename"
+
+echo "___________________________ Testing with Betty ______________________"
+
+# Run the Betty checker
+betty "$filename"
