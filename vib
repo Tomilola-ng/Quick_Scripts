@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo '___________________________________________________'
+echo 'Commands run'
+echo 'vi file_name'
+vi "$1"
+echo 'betty file_name'
+betty "$1"
