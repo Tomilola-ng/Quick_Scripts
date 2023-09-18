@@ -6,4 +6,4 @@ cd "$1"
 
 vi README.md
 
-echo('Created Directory; Changed into that directory; created README.md file;')
+#echo('Created Directory; Changed into that directory; created README.md file;')
