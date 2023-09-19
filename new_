@@ -42,7 +42,7 @@ vi "$filename"
 # Run the Betty checker
 betty "$filename"
 
-echo('The commands run are')
-echo('clear')
-echo('vi "$filename"')
-echo('betty "$filename"')
+echo "The commands run are"
+echo "clear"
+echo "vi $filename"
+echo "betty $filename"
