@@ -6,4 +6,7 @@ cd "$1"
 
 vi README.md
 
-#echo('Created Directory; Changed into that directory; created README.md file;')
+echo "The commands run are : "
+echo "mkdir $1"
+echo "cd $1"
+echo "vi README.md"
